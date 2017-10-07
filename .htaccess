@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|static|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+##定义目录索引页面
+#DirectoryIndex index.php index.html
+#order deny,allow
+#RewriteEngine on
+#RewriteBase /
+#RewriteCond $1 !^(index\.php|static|application)
+#RewriteRule ^(.*)$ /index.php/$1 [L]
